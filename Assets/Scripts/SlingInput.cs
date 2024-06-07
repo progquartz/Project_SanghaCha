@@ -56,7 +56,6 @@ public class SlingInput : MonoBehaviour
                 // 터치 당기기
                 if (isTouchStarted)
                 {
-                    Debug.Log((worldTouchPos - touchStartPosition).magnitude);
                     if ((worldTouchPos - touchStartPosition).magnitude > maxPowerDrag)
                     {
                         Vector2 normDelta = (worldTouchPos - touchStartPosition).normalized;
